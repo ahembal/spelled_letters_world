@@ -9,8 +9,8 @@ from django.conf import settings
 # Create your models here.
 
 class Board(models.Model):
-	name = models.CharField(max_length=30, unique=True)
-	description = models.CharField(max_length=50)
+	name = models.CharField(max_length=77, unique=True)
+	description = models.CharField(max_length=111)
 	creation_time = models.DateTimeField(auto_now_add=True)
 
 	def __str__(self):
